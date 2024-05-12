@@ -1,2 +1,2 @@
-# Database-Level2-Concepts-T-SQL
-Database Level2 - Concepts &amp; T-SQL
+## Transact-SQL (T-SQL)
+### is a programming language used to manage and manipulate relational databases. It is a proprietary language developed by Microsoft and is the primary language used for programming Microsoft SQL Server
