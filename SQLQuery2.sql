@@ -1,72 +1,35 @@
-Declare @a int 
-      , @b int;
+--use C21_DB1;
 
-set @a = 20;
-set @b = 10;
+--CREATE TABLE Products (
+--    ProductID INT PRIMARY KEY,
+--    StockQuantity INT
+--);
 
-IF @a > @b
-	BEGIN
-		PRINT 'Yes A is greater than B'
-	END
-	-------------------------------
+--Go
 
-Declare @year int;
-set @year =201;
+--INSERT INTO Products (ProductID, StockQuantity) VALUES (1, 100);
+--INSERT INTO Products (ProductID, StockQuantity) VALUES (2, 50);
+--INSERT INTO Products (ProductID, StockQuantity) VALUES (3, 75);
+	use C21_DB1;
 
-IF @year >= 2000
-    BEGIN
-        PRINT '21st century'
-    END
+    declare @NewStockQty INT;
 
-ELSE
-    BEGIN
-        PRINT '20th century or earlier'
-    END
-
-	----------------------------------
-Declare  @score int;
-set @score = 80;
-
-IF @score >= 90
-	BEGIN
-		PRINT 'Grade A'
-	END
-ELSE
-	BEGIN
-		IF @score >= 80
-			BEGIN
-				PRINT 'Grade B'
-			END
-		ELSE
-			BEGIN
-				PRINT 'Grade C or lower'
-			END
-	END
-	------------------Using IF with Variables and Conditional Assignments-----------------------
-	DECLARE @age INT;
-SET @age = 25;
+	set @NewStockQty=-5;
 
 
-IF @age >= 18
-BEGIN
-    PRINT 'Adult'
-END
-ELSE
-BEGIN
-    PRINT 'Minor'
-END
---------
-DECLARE @max INT;
-Declare @a int, @b int;
-set @a = 20;
-set @b=10;
+    -- Start a TRY block
+    BEGIN TRY
+        -- Check if NewStockQty is negative
+        IF @NewStockQty < 0
+            THROW 51000, 'Stock quantity cannot be negative.', 1;
 
-----Conditional assingment
-IF @a > @b
-    SET @max = @a
-ELSE
-    SET @max = @b
+        -- Proceed with updating stock (example code)
+        UPDATE Products SET StockQuantity = @NewStockQty WHERE ProductID = 1;
+    END TRY
 
-Print @max;
-
-----
+    -- Start a CATCH block to handle the error
+    BEGIN CATCH
+        SELECT 
+            ERROR_NUMBER() AS ErrorNumber,
+            ERROR_MESSAGE() AS ErrorMessage;
+    END CATCH
