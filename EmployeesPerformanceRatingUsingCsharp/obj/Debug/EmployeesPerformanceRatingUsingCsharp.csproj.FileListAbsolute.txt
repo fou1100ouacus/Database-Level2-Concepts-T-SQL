@@ -1,0 +1,7 @@
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\bin\Debug\EmployeesPerformanceRatingUsingCsharp.exe.config
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\bin\Debug\EmployeesPerformanceRatingUsingCsharp.exe
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\bin\Debug\EmployeesPerformanceRatingUsingCsharp.pdb
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\obj\Debug\EmployeesPerformanceRatingUsingCsharp.csproj.AssemblyReference.cache
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\obj\Debug\EmployeesPerformanceRatingUsingCsharp.csproj.CoreCompileInputs.cache
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\obj\Debug\EmployeesPerformanceRatingUsingCsharp.exe
+D:\Course 21 Material\EmployeesPerformanceRatingUsingCsharp\obj\Debug\EmployeesPerformanceRatingUsingCsharp.pdb
