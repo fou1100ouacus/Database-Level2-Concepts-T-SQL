@@ -1,0 +1,8 @@
+SELECT TOP (1000) [User_ID]
+      ,[Person_ID]
+      ,[Email]
+      ,[Password]
+      ,[Permission]
+      ,[Phone]
+      ,[User_Name]
+  FROM [Bank_Data_Bases].[dbo].[Users]
